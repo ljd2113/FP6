@@ -6,7 +6,7 @@ import time
 
 # --- CONFIGURATION ---
 # IMPORTANT: Replace the placeholder with your ACTUAL API Key in quotes
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "OPENAI_API_KEY"
 DB_NAME = 'feedback.db'
 TABLE_NAME = 'reviews'
 TEXT_COLUMN = 'review_text'
@@ -143,5 +143,6 @@ if __name__ == "__main__":
     except Exception as e:
         # This catches the final error you were seeing: list binding issue
         print(f"Error saving data to SQLite: {e}")
+
 
     conn.close()
